@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<form class="form-horizontal" action="/upload" method="POST" enctype="multipart/form-data">
+<fieldset>
+
+<legend>File Upload</legend>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="filebutton">File</label>
+  <%= typeof msg != 'undefined' ? msg : '' %>
+  
+  <div class="col-md-4">
+    <input id="filebutton" name="image" class="input-file" type="file">
+    </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton">Upload</label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="upload" class="btn btn-primary">Upload</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+</body>
+</html>
